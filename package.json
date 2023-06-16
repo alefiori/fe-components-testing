@@ -1,0 +1,15 @@
+{
+  "name": "fe-components-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "react-testing",
+    "angular-testing"
+  ],
+  "scripts": {
+    "start:angular": "cd angular-testing && yarn start",
+    "start:react": "cd react-testing && yarn dev"
+  }
+}
