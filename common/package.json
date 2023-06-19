@@ -1,0 +1,16 @@
+{
+  "name": "common",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "watch": "tsc && vite build --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.63.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}

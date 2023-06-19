@@ -55,7 +55,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "../common/dist/style.css"
             ],
             "scripts": []
           },
@@ -117,7 +117,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "../common/dist/style.css"
             ],
             "scripts": []
           }

@@ -6,10 +6,16 @@
   "private": true,
   "workspaces": [
     "react-testing",
-    "angular-testing"
+    "angular-testing",
+    "common"
   ],
   "scripts": {
     "start:angular": "cd angular-testing && yarn start",
-    "start:react": "cd react-testing && yarn dev"
+    "start:react": "cd react-testing && yarn dev",
+    "build:angular": "yarn build:common && cd angular-testing && yarn build",
+    "build:react": "yarn build:common && cd react-testing && yarn build",
+    "build:common": "cd common && yarn build",
+    "watch:common": "cd common && yarn watch",
+    "postinstall": "yarn build:common"
   }
 }
