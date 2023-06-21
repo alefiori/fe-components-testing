@@ -4,14 +4,24 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "react-testing",
-    "angular-testing",
-    "common"
-  ],
+  "workspaces": {
+    "packages": [
+      "react-testing",
+      "angular-testing",
+      "common"
+    ],
+    "nohoist": [
+      "**/@types/jest",
+      "**/@types/jasmine"
+    ]
+  },
   "scripts": {
     "start:angular": "cd angular-testing && yarn start",
-    "start:react": "cd react-testing && yarn dev",
+    "start:react": "cd react-testing && yarn start",
+    "test:angular": "cd angular-testing && yarn test",
+    "test:react": "cd react-testing && yarn test",
+    "coverage:angular": "cd angular-testing && yarn coverage",
+    "coverage:react": "cd react-testing && yarn coverage",
     "build:angular": "yarn build:common && cd angular-testing && yarn build",
     "build:react": "yarn build:common && cd react-testing && yarn build",
     "build:common": "cd common && yarn build",
