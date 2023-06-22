@@ -33,3 +33,6 @@ Repository made with yarn workspaces containing three packages:
   - `react` as framework
   - `jest` as testing framework
   - `testing-library` as components testing utilities
+
+## API
+https://dummyjson.com/docs/todos

@@ -1,0 +1,16 @@
+.header {
+  height: 20rem;
+  text-align: center;
+  width: 100%;
+  display: table;
+  &--react {
+    background-color: $react-color;
+  }
+  &--angular {
+    background-color: $angular-color;
+  }
+  &__title {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

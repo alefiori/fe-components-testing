@@ -1,7 +1,7 @@
+import 'common/dist/style.css'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { App } from './App'
-import 'common/dist/style.css'
+import { App } from './App/App'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>

@@ -1,7 +1,8 @@
-body {
-  font-size: 16px;
-}
+@import './abstracts/variables';
 
-h1 {
-  color: red;
-}
+@import './base/base';
+
+@import './components/header';
+@import './components/search-bar';
+@import './components/todo-list';
+@import './components/todo';

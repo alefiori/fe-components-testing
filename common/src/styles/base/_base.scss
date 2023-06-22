@@ -1,0 +1,27 @@
+html {
+  font-size: 25%; // 1rem = 4px
+}
+
+body {
+  font-size: $default-font-size;
+  font-family: $default-font-family;
+  font-weight: $default-font-weight;
+  line-height: $default-line-height;
+  color: $text-color;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.content {
+  max-width: $grid-width;
+  margin: 0 auto 5rem;
+  text-align: center;
+}

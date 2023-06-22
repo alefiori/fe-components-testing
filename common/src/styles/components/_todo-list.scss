@@ -1,0 +1,10 @@
+.todo-list {
+  margin-top: 4rem;
+  &__items {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 4rem;
+  }
+}

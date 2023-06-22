@@ -1,0 +1,14 @@
+.todo {
+  border: 1px solid $text-color;
+  height: 30rem;
+  border-radius: 3rem;
+  padding: 4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--checked {
+    border-color: green;
+    background-color: rgba(green, 0.2);
+  }
+}
