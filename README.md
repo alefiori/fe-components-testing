@@ -9,6 +9,7 @@ Repository made with yarn workspaces containing three packages:
 
 ## How to run
 - `nvm install && nvm use` to install and use the correct node version (LTS)
+- `npm i -g yarn` to install yarn globally (if you don't have it already)
 - `yarn` to install dependencies and build common package (used by the other packages)
 - Start the application you want:
   - `yarn start:angular` to start the angular application

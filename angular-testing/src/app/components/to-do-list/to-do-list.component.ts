@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { ToDoComponent } from '../to-do/to-do.component';
+import { Component, Input, OnChanges } from '@angular/core';
 import { ToDoList } from 'common/dist/types';
+import { ToDoComponent } from '../to-do/to-do.component';
 
 @Component({
   selector: 'app-to-do-list',
   standalone: true,
   imports: [CommonModule, ToDoComponent],
-  template: ` <section class="todo-list">
+  template: `<section class="todo-list">
     <h2>List of ToDos</h2>
     <ul class="todo-list__items">
       <li *ngFor="let toDo of filteredToDoList">

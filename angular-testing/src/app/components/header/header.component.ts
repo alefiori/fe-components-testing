@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   standalone: true,
   imports: [CommonModule],
-  template: ` <header class="header header--angular">
+  template: `<header class="header header--angular">
     <h1 class="header__title">To-Do List App</h1>
   </header>`,
 })

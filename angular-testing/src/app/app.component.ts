@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
-import { SearchBarComponent, ToDoListComponent } from './components';
-import { ApiService } from './services';
+import { Component } from '@angular/core';
 import { ToDoList } from 'common/dist/types';
 import { Observable, map } from 'rxjs';
+import { SearchBarComponent, ToDoListComponent } from './components';
+import { HeaderComponent } from './components/header/header.component';
+import { ApiService } from './services';
 
 @Component({
   selector: 'app-root',
