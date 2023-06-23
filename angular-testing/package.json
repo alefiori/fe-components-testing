@@ -4,8 +4,8 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "coverage": "ng test --no-watch --code-coverage"
+    "test": "ng test --browsers=ChromeHeadless",
+    "coverage": "ng test --browsers=ChromeHeadless --no-watch --code-coverage"
   },
   "private": true,
   "dependencies": {
