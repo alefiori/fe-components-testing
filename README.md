@@ -3,11 +3,17 @@
 ## Content
 
 Repository made with yarn workspaces containing three packages:
+
 - `common`: contains common stylesheets (using sass preprocessor) and typescript types
 - `angular-testing`: contains a simple to do list application made with angular
 - `react-testing`: contains a simple to do list application made with react
 
+## Prerequisites
+
+- `nvm` to manage node versions (https://github.com/nvm-sh/nvm#installing-and-updating)
+
 ## How to run
+
 - `nvm install && nvm use` to install and use the correct node version (LTS)
 - `npm i -g yarn` to install yarn globally (if you don't have it already)
 - `yarn` to install dependencies and build common package (used by the other packages)
@@ -19,6 +25,7 @@ Repository made with yarn workspaces containing three packages:
   - `yarn test:react` to test the react application
 
 ## Tech Stack
+
 - [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)
 - Typescript as language in all the packages
 - `common`:
@@ -36,4 +43,5 @@ Repository made with yarn workspaces containing three packages:
   - `testing-library` as components testing utilities
 
 ## API
+
 https://dummyjson.com/docs/todos
