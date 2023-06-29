@@ -11,6 +11,7 @@ Repository made with yarn workspaces containing three packages:
 ## Prerequisites
 
 - `nvm` to manage node versions (https://github.com/nvm-sh/nvm#installing-and-updating)
+- `Google Chrome` to run Angular tests (https://www.google.com/chrome/)
 
 ## How to run
 
