@@ -23,13 +23,11 @@ describe("ToDo component", () => {
     expect(paragraph?.textContent).toBe("__TODO_1__");
   });
 
-  it.skip("should click the card", () => {
-    const onClick = jest.fn();
+  /*   it("should click the card", () => {
     const { container } = render(<ToDo {...toDoCard} />);
     const card = container.querySelector("div");
     fireEvent.click(card!);
-    expect(onClick).toHaveBeenCalled();
-  });
+  }); */
 
   it("should render the card uncompleted", () => {
     const { container } = render(<ToDo {...toDoCard} />);
@@ -41,5 +39,15 @@ describe("ToDo component", () => {
     const { container } = render(<ToDo {...toDoCardCompleted} />);
     const card = container.querySelector("div");
     expect(card?.className).toBe("todo todo--checked");
+  });
+
+  it("should be completed after click", () => {
+    const { container } = render(<ToDo {...toDoCard} />);
+    const card = container.querySelector("div");
+    fireEvent.click(card!);
+    expect(card?.className).toBe("todo todo--checked");
+
+    fireEvent.click(card!);
+    expect(card?.className.includes("todo--checked")).toBeFalsy();
   });
 });
